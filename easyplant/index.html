@@ -29,8 +29,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400..800;1,400..800&display=swap" />
 
-    <script type="module" crossorigin src="/mixtiles-site/_build/main-BGwwTnoW.js"></script>
-    <link rel="stylesheet" crossorigin href="/mixtiles-site/_build/main-DkGj8h0A.css">
+    <script type="module" crossorigin src="/mixtiles-site/_build/main-nvDSuglB.js"></script>
+    <link rel="stylesheet" crossorigin href="/mixtiles-site/_build/main-Dvos4mXq.css">
   </head>
 
   <body data-hero="light" data-page="easyplant">
@@ -102,7 +102,7 @@
               <figcaption><strong>1. Fill the reservoir once a month</strong>Pour water into the fill cap. No guessing how much.</figcaption>
             </figure>
             <figure data-reveal="slide-up" data-reveal-offset="3" style="--reveal-delay: 80ms">
-              <img src="/mixtiles-site/assets/images/products/ep-roots.webp" alt="A cutaway of an easyplant pot showing roots drawing water from the reservoir" loading="lazy" />
+              <img src="/mixtiles-site/assets/images/products/ep-roots.webp" alt="A cutaway of an easyplant pot: water poured into the reservoir is drawn up into the soil and roots" loading="lazy" />
               <figcaption><strong>2. Your plant drinks what it needs</strong>Roots draw water up from the reservoir, exactly as they need it.</figcaption>
             </figure>
           </div>
@@ -118,8 +118,19 @@
                 <li><strong>Four sizes</strong><span>From small tabletop plants to huge 1.5 m statement pieces.</span></li>
               </ul>
             </div>
-            <div class="media" style="aspect-ratio: 1600 / 1227" data-reveal="zoom">
-              <img src="/mixtiles-site/assets/images/products/ep-experts.webp" alt="Chatting with an easyplant plant expert about a yellow leaf" loading="lazy" />
+            <!-- photo, with the chat built in HTML/CSS on top of it -->
+            <div class="media expert-chat" style="aspect-ratio: 4 / 3" data-reveal="zoom">
+              <img src="/mixtiles-site/assets/images/products/ep-experts-photo.webp" alt="A woman on her sofa messaging an easyplant plant expert on her phone" loading="lazy" />
+              <div class="expert-chat__thread">
+                <div class="expert-chat__msg expert-chat__msg--me">
+                  <img class="expert-chat__photo" src="/mixtiles-site/assets/images/products/ep-experts-leaf.webp" alt="A pothos leaf turning yellow" loading="lazy" />
+                  <p>Hey, my plant has a yellow leaf</p>
+                </div>
+                <div class="expert-chat__msg expert-chat__msg--expert">
+                  <span class="expert-chat__avatar" aria-hidden="true">e</span>
+                  <p>Looks like it needs more light. Can you move it to a sunnier spot?</p>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -154,16 +165,21 @@
       <!-- ============================== SENSOR ============================== -->
       <section class="section chapter theme-light" id="sensor">
         <div class="container">
-          <div class="chapter__head" data-reveal="fade-up">
-            <span class="eyebrow">easyplant Sensor</span>
-            <h2>Give any plant a voice.</h2>
-            <p class="lede">
-              Most plants don't die from neglect. They die from guessing. Slide the Sensor into the soil of any plant and it
-              continuously reads moisture and light, so the Sensor app can tell you exactly how to care for it.
-            </p>
+          <div class="split sensor-intro">
+            <div class="split__text" data-reveal="fade-up">
+              <span class="eyebrow">easyplant Sensor</span>
+              <h2>Give any plant a voice.</h2>
+              <p class="lede">
+                Most plants don't die from neglect. They die from guessing. Slide the Sensor into the soil of any plant and it
+                continuously reads moisture and light, so the Sensor app can tell you exactly how to care for it.
+              </p>
+            </div>
+            <div class="sensor-intro__photo" data-reveal="zoom">
+              <img src="/mixtiles-site/assets/images/products/sensor-box.webp" alt="The easyplant Sensor box with the Sensor lying in front of it" loading="lazy" width="1200" height="1500" />
+            </div>
           </div>
-          <div class="media" style="aspect-ratio: 16 / 9" data-video="in-view" data-reveal="zoom">
-            <video loop muted playsinline preload="metadata" poster="/mixtiles-site/assets/images/posters/sensor.webp" aria-label="The easyplant Sensor assembling and sliding into a plant pot">
+          <div class="media" style="aspect-ratio: 16 / 9; margin-top: clamp(40px, 5vw, 72px)" data-video="in-view" data-reveal="zoom">
+            <video loop muted playsinline preload="none" data-poster="/mixtiles-site/assets/images/posters/sensor.webp" aria-label="The easyplant Sensor assembling and sliding into a plant pot">
               <source src="/mixtiles-site/assets/videos/sensor.mp4" type="video/mp4" />
             </video>
           </div>
@@ -195,9 +211,40 @@
               <p class="muted" style="margin-top: 20px; font-size: var(--fs-small)">Free on the App Store.</p>
             </div>
             <div class="media" style="aspect-ratio: 16 / 9" data-video="in-view" data-reveal="zoom">
-              <video loop muted playsinline preload="metadata" poster="/mixtiles-site/assets/images/posters/greener.webp" aria-label="Photographing a plant with Greener and getting a diagnosis">
+              <video loop muted playsinline preload="none" data-poster="/mixtiles-site/assets/images/posters/greener.webp" aria-label="Photographing a plant with Greener and getting a diagnosis">
                 <source src="/mixtiles-site/assets/videos/greener.mp4" type="video/mp4" />
               </video>
+            </div>
+          </div>
+
+          <!-- the step-by-step how-tos Greener shows for the most common fixes -->
+          <div class="greener-howto">
+            <h3 class="greener-howto__title" data-reveal="fade-up">Step-by-step fixes, in the app.</h3>
+            <div class="captioned captioned--4 captioned--glass" style="--ratio: 1200 / 898">
+            <figure data-video="in-view" data-reveal="slide-up" data-reveal-offset="3">
+              <video loop muted playsinline preload="none" data-poster="/mixtiles-site/assets/images/posters/greener-trim.webp" aria-label="Cutting a dead leaf off a plant with small scissors">
+                <source src="/mixtiles-site/assets/videos/greener-trim.mp4" type="video/mp4" />
+              </video>
+              <figcaption><strong>Trim dead leaves</strong></figcaption>
+            </figure>
+            <figure data-video="in-view" data-reveal="slide-up" data-reveal-offset="3" style="--reveal-delay: 60ms">
+              <video loop muted playsinline preload="none" data-poster="/mixtiles-site/assets/images/posters/greener-repot.webp" aria-label="Lifting a plant out of its pot and replanting it in a bigger one">
+                <source src="/mixtiles-site/assets/videos/greener-repot.mp4" type="video/mp4" />
+              </video>
+              <figcaption><strong>Repot it</strong></figcaption>
+            </figure>
+            <figure data-video="in-view" data-reveal="slide-up" data-reveal-offset="3" style="--reveal-delay: 120ms">
+              <video loop muted playsinline preload="none" data-poster="/mixtiles-site/assets/images/posters/greener-shade.webp" aria-label="Carrying a plant out of direct sun to a shadier spot">
+                <source src="/mixtiles-site/assets/videos/greener-shade.mp4" type="video/mp4" />
+              </video>
+              <figcaption><strong>Move it to the shade</strong></figcaption>
+            </figure>
+            <figure data-video="in-view" data-reveal="slide-up" data-reveal-offset="3" style="--reveal-delay: 180ms">
+              <video loop muted playsinline preload="none" data-poster="/mixtiles-site/assets/images/posters/greener-sun.webp" aria-label="Carrying a plant into a brighter, sunnier spot">
+                <source src="/mixtiles-site/assets/videos/greener-sun.mp4" type="video/mp4" />
+              </video>
+              <figcaption><strong>Move it into the sun</strong></figcaption>
+            </figure>
             </div>
           </div>
         </div>
@@ -215,7 +262,7 @@
             </p>
           </div>
           <div class="media" style="aspect-ratio: 16 / 9" data-video="once-in-view" data-reveal="zoom">
-            <video muted playsinline preload="metadata" poster="/mixtiles-site/assets/images/posters/easyplant-2.webp" aria-label="The easyplant 2.0 smart pot with its glowing status light">
+            <video muted playsinline preload="none" data-poster="/mixtiles-site/assets/images/posters/easyplant-2.webp" aria-label="The easyplant 2.0 smart pot with its glowing status light">
               <source src="/mixtiles-site/assets/videos/easyplant-2.mp4" type="video/mp4" />
             </video>
           </div>
