@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Google Home">
+<title>Google Home</title>
+<rect x="1" y="1" width="118" height="118" rx="30" fill="#FFFFFF" stroke="#E9E5DF" stroke-width="2"/>
+<defs>
+<clipPath id="gh"><path transform="translate(28 28) scale(2.667)" d="M12 0a1.44 1.44 0 0 0-.947.399L.547 10.762a1.26 1.26 0 0 0-.342.808v11.138c0 .768.53 1.292 1.311 1.292h20.968c.78 0 1.311-.522 1.311-1.292V11.57a1.25 1.25 0 0 0-.34-.804L15.68 3.097h-.001L12.947.4A1.454 1.454 0 0 0 12 0Zm0 6.727 6.552 6.456v5.65H5.446v-5.65z"/></clipPath>
+<filter id="gb" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="9"/></filter>
+</defs>
+<g clip-path="url(#gh)">
+<rect x="20" y="20" width="80" height="80" fill="#FBBC04"/>
+<g filter="url(#gb)">
+<circle cx="60" cy="26" r="22" fill="#EA4335"/>
+<circle cx="88" cy="62" r="24" fill="#4285F4"/>
+<circle cx="64" cy="94" r="22" fill="#34A853"/>
+<circle cx="30" cy="70" r="20" fill="#FBBC04"/>
+</g>
+</g>
+</svg>

@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mixtiles | Beautiful, AI-native products for the home</title>
+<meta name="description" content="Mixtiles makes beautiful, AI-native products for the home: Mixtiles photo walls and books, easyplant self-watering plants, Oasis natural lighting and DJ, music that reads the room." />
+<meta name="theme-color" content="#000000" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Mixtiles" />
+<meta property="og:title" content="Mixtiles | Beautiful, AI-native products for the home" />
+<meta property="og:description" content="Mixtiles makes beautiful, AI-native products for the home: Mixtiles photo walls and books, easyplant self-watering plants, Oasis natural lighting and DJ, music that reads the room." />
+<meta property="og:image" content="/mixtiles-site/assets/images/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="icon" href="/mixtiles-site/assets/images/brand/favicon.svg" type="image/svg+xml" />
+
+<!-- Mark JS as available before first paint so reveal elements start hidden (no flash). -->
+<script>
+  document.documentElement.classList.add('js');
+</script>
+
+<!-- Page-to-page transitions (cross-document View Transitions): the old page fades out and lifts
+     away, the new one fades in, the navbar stays put. Inline so every page opts in before its
+     first paint (in dev, Vite injects the stylesheets with JS, too late). Unsupported browsers
+     just change page as usual. -->
+<style>@view-transition{navigation:auto}.site-nav{view-transition-name:site-nav}::view-transition-old(root){animation:.3s cubic-bezier(.65,0,.35,1) both page-out}::view-transition-new(root){animation:.45s cubic-bezier(.25,1,.5,1) both page-in}@keyframes page-out{to{opacity:0;transform:translateY(-12px)}}@keyframes page-in{0%{opacity:0;transform:translateY(16px)}}@media (prefers-reduced-motion:reduce){::view-transition-group(*){animation:none!important}::view-transition-old(*){animation:none!important}::view-transition-new(*){animation:none!important}}</style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400..800;1,400..800&display=swap" />
+
+    <script type="module" crossorigin src="/mixtiles-site/_build/main-BGwwTnoW.js"></script>
+    <link rel="stylesheet" crossorigin href="/mixtiles-site/_build/main-DkGj8h0A.css">
+  </head>
+
+  <body data-page="home">
+    <a class="skip-link" href="#main">Skip to content</a>
+<header class="site-nav" data-nav>
+  <div class="site-nav__line"></div>
+  <div class="site-nav__inner">
+    <a href="/mixtiles-site/" class="site-nav__logo" aria-label="Mixtiles home">
+      <img src="/mixtiles-site/assets/images/brand/mixtiles-logo-white.svg" width="120" height="15" alt="Mixtiles" />
+    </a>
+    <div class="site-nav__menu">
+      <nav class="site-nav__links" id="site-menu" data-nav-menu aria-label="Main">
+        <a href="/mixtiles-site/mixtiles/">Mixtiles</a>
+        <a href="/mixtiles-site/easyplant/">Easyplant</a>
+        <a href="/mixtiles-site/oasis/">Oasis</a>
+        <a href="/mixtiles-site/dj/">DJ</a>
+      </nav>
+      <button type="button" class="site-nav__toggle" data-nav-toggle aria-controls="site-menu" aria-expanded="false" aria-label="Open menu">
+        <span></span>
+      </button>
+    </div>
+    <a class="site-nav__contact" href="https://www.mixtiles.com/contact" target="_blank" rel="noopener">Contact us</a>
+  </div>
+</header>
+
+
+    <main id="main">
+      <!-- ============================== HERO ============================== -->
+      <section class="home-hero">
+        <video class="home-hero__video" autoplay loop muted playsinline poster="/mixtiles-site/assets/images/posters/home-hero.jpg">
+          <source src="/mixtiles-site/assets/videos/home-hero.mp4" type="video/mp4" />
+        </video>
+        <div class="home-hero__content">
+          <h1>
+            <span data-intro style="display: block">Bring your home</span>
+            <span data-intro style="display: block; --intro-delay: 0.15s">to life.</span>
+          </h1>
+          <p data-intro style="--intro-delay: 0.45s">
+            Mixtiles makes beautiful, AI-native products for every part of the home: the walls, the plants, the light and the music.
+          </p>
+        </div>
+        <div class="home-hero__scroll" data-scroll-indicator aria-hidden="true"><span></span></div>
+      </section>
+
+      <!-- ============================== INTRO ============================== -->
+      <!-- Animated statement: words fade in line by line, then the image pills open (src/modules/statement.js) -->
+      <section class="section theme-light statement-section" aria-label="About Mixtiles">
+        <div class="container statement-wrap">
+          <p class="statement" data-statement data-statement-offset="10">
+            <span class="statement__lead">At Mixtiles, we create simple, beautiful ways to make your home warm and alive.</span>
+            From movable photo art <span class="statement__pill"><img src="/mixtiles-site/assets/images/statement/photo-art.webp" alt="" /></span>
+            and self-watering plants <span class="statement__pill"><img src="/mixtiles-site/assets/images/statement/plants.webp" alt="" /></span>
+            to natural<br class="statement__br" />
+            lighting <span class="statement__pill"><img src="/mixtiles-site/assets/images/statement/light.webp" alt="" /></span>
+            and mood-based music, <span class="statement__pill"><img src="/mixtiles-site/assets/images/statement/music.webp" alt="" /></span>
+            our products bring warmth, life,<br class="statement__br" />
+            and personality to every corner of your space.
+          </p>
+        </div>
+      </section>
+
+      <!-- ============================== PRODUCT TILES ==============================
+           Apple-style stack: one full-width tile per brand, then a two-column grid of sub-products.
+           Each tile = title, one-line subhead, two pill buttons, media filling the rest (src/styles/home.css). -->
+      <!-- ============================== BRANDS ==============================
+           The original Webflow product heroes: big name, gradient tagline, a tag pill (rebuilt in CSS
+           from the old Rive buttons; it links to the brand page) and the product film on white. -->
+      <section class="product-hero" id="mixtiles" data-brand="mixtiles" aria-labelledby="mixtiles-title">
+        <div class="product-hero__head">
+          <h2 class="product-hero__title" id="mixtiles-title" data-reveal="fade-up" data-reveal-offset="10">Mixtiles</h2>
+          <p class="product-hero__tagline" data-reveal="fade-up" data-reveal-offset="15">Photo Walls Reinvented</p>
+          <a class="tag-pill" href="/mixtiles-site/mixtiles/" data-reveal="tag" data-reveal-offset="5" aria-label="Wall Art: learn more about Mixtiles">
+            <span class="tag-pill__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7.5" y="3.5" width="12" height="14" rx="2"/><path d="M5 6.6 4.6 6.7a1.8 1.8 0 0 0-1.3 2.2l2.6 10.2a1.8 1.8 0 0 0 2.2 1.3l7.4-1.9"/><path d="m7.5 15 3.6-3.9 2.7 2.7 1.9-1.9 3.8 3.9"/><circle cx="15.2" cy="7.8" r="1.3"/></svg></span><span class="tag-pill__label">Wall Art</span>
+          </a>
+        </div>
+        <div class="product-hero__media product-hero__media--mixtiles film-on-white" data-video="once-in-view">
+          <video muted playsinline preload="metadata" poster="/mixtiles-site/assets/images/posters/mixtiles-hero.webp" aria-label="Mixtiles frames arranging themselves into a gallery wall">
+            <source src="/mixtiles-site/assets/videos/mixtiles-hero.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </section>
+
+      <section class="product-hero" id="easyplant" data-brand="easyplant" aria-labelledby="easyplant-title">
+        <div class="product-hero__head">
+          <h2 class="product-hero__title" id="easyplant-title" data-reveal="fade-up" data-reveal-offset="10">Easyplant</h2>
+          <p class="product-hero__tagline" data-reveal="fade-up" data-reveal-offset="15">Self-Watering Plant</p>
+          <a class="tag-pill" href="/mixtiles-site/easyplant/" data-reveal="tag" data-reveal-offset="5" aria-label="Plants: learn more about easyplant">
+            <span class="tag-pill__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21c-4.5-2.6-6.8-6.2-6.8-10.3C5.2 7 8 4.1 12 3c4 1.1 6.8 4 6.8 7.7 0 4.1-2.3 7.7-6.8 10.3Z"/><path d="M12 21V9.5"/></svg></span><span class="tag-pill__label">Plants</span>
+          </a>
+        </div>
+        <div class="product-hero__media product-hero__media--easyplant film-on-white" data-video="once-in-view">
+          <video muted playsinline preload="metadata" poster="/mixtiles-site/assets/images/posters/easyplant-hero.jpg" aria-label="Self-watering easyplants appearing one by one">
+            <source src="/mixtiles-site/assets/videos/easyplant-hero.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </section>
+
+      <section class="product-hero" id="oasis" data-brand="oasis" aria-labelledby="oasis-title">
+        <div class="product-hero__head">
+          <h2 class="product-hero__title" id="oasis-title" data-reveal="fade-up" data-reveal-offset="10">Oasis</h2>
+          <p class="product-hero__tagline" data-reveal="fade-up" data-reveal-offset="15">The world's smartest light</p>
+          <a class="tag-pill" href="/mixtiles-site/oasis/" data-reveal="tag" data-reveal-offset="5" aria-label="Lighting: learn more about Oasis">
+            <span class="tag-pill__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle class="fill" cx="12" cy="12" r="4.2"/><path d="M12 2.6v1.6M12 19.8v1.6M2.6 12h1.6M19.8 12h1.6M5.4 5.4l1.1 1.1M17.5 17.5l1.1 1.1M5.4 18.6l1.1-1.1M17.5 6.5l1.1-1.1"/></svg></span><span class="tag-pill__label">Lighting</span>
+          </a>
+        </div>
+        <div class="product-hero__media product-hero__media--oasis film-on-white" data-video="once-in-view">
+          <video muted playsinline preload="metadata" poster="/mixtiles-site/assets/images/posters/oasis-hero.webp" aria-label="Oasis bulbs and the Ambient light floating into place">
+            <source src="/mixtiles-site/assets/videos/oasis-hero.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </section>
+
+      <div class="promo-grid">
+        <section class="promo-tile theme-alt" id="dj" data-brand="dj" aria-labelledby="dj-title">
+          <p class="promo-tile__eyebrow">Coming soon</p>
+          <h3 class="promo-tile__title" id="dj-title">DJ</h3>
+          <p class="promo-tile__sub">AI mood based music speaker.</p>
+          <div class="btn-row">
+            <a class="btn btn--primary" href="/mixtiles-site/dj/">Learn more</a>
+            <a class="btn btn--ghost" href="/mixtiles-site/dj/#how-it-works">How it works</a>
+          </div>
+          <div class="promo-tile__media promo-tile__media--contain">
+            <img src="/mixtiles-site/assets/images/products/dj-speaker-float.webp" alt="The DJ speaker: an oak frame, a woven linen front and a small screen showing the song that's playing" loading="lazy" />
+          </div>
+        </section>
+
+        <section class="promo-tile theme-alt" data-brand="mixtiles" aria-labelledby="photobooks-title">
+          <h3 class="promo-tile__title" id="photobooks-title">Photobooks</h3>
+          <p class="promo-tile__sub">Made in minutes. Kept forever.</p>
+          <div class="btn-row">
+            <a class="btn btn--primary" href="/mixtiles-site/mixtiles/#photobooks">Learn more</a>
+            <a class="btn btn--ghost" href="https://www.mixtiles.com/" target="_blank" rel="noopener">Shop</a>
+          </div>
+          <div class="promo-tile__media promo-tile__media--contain">
+            <img src="/mixtiles-site/assets/images/products/photobooks-sizes.webp" width="686" height="690" alt="Three Mixtiles photobooks in different sizes, each with a family photo on the cover" loading="lazy" />
+          </div>
+        </section>
+
+        <section class="promo-tile promo-tile--photo theme-alt" data-brand="easyplant" aria-labelledby="trees-title">
+          <h3 class="promo-tile__title" id="trees-title">Self-watering trees</h3>
+          <p class="promo-tile__sub">Seven feet tall. Water once a month.</p>
+          <div class="btn-row">
+            <a class="btn btn--primary" href="/mixtiles-site/easyplant/#trees">Learn more</a>
+            <a class="btn btn--ghost" href="https://easyplant.com/" target="_blank" rel="noopener">Shop</a>
+          </div>
+          <div class="promo-tile__media">
+            <img src="/mixtiles-site/assets/images/products/ep-trees-hero.webp" alt="A woman beside a 7-ft self-watering tree in a bright living room" loading="lazy" style="object-position: 48% 70%" />
+          </div>
+        </section>
+
+        <section class="promo-tile theme-dark slap-tile" data-brand="slap" aria-labelledby="slap-title">
+          <h3 class="promo-tile__title slap-tile__logo" id="slap-title"><img src="/mixtiles-site/assets/images/brand/slap-logo.svg" width="238" height="87" alt="Slap" /></h3>
+          <p class="promo-tile__sub">Framed posters with attitude.</p>
+          <div class="btn-row">
+            <a class="btn btn--primary" href="/mixtiles-site/mixtiles/#slap">Learn more</a>
+            <a class="btn btn--ghost" href="https://slap.art/" target="_blank" rel="noopener">Shop</a>
+          </div>
+          <!-- a tilted wall of Slap prints, after the cover slide of the Slap studio deck -->
+          <div class="promo-tile__media slap-wall" role="img" aria-label="A wall of Slap posters: a snow monkey, a gorilla, a tiger and snake, a night train and a pagoda">
+            <div class="slap-wall__grid">
+              <div class="slap-wall__col"><img src="/mixtiles-site/assets/images/products/slap-chowa-pagoda-fuji.webp" alt="" loading="lazy" /><img src="/mixtiles-site/assets/images/products/slap-kikan-train-city-night.webp" alt="" loading="lazy" /><img src="/mixtiles-site/assets/images/products/slap-sokoku-tiger-snake.webp" alt="" loading="lazy" /><img src="/mixtiles-site/assets/images/products/slap-dan-snow-monkey.webp" alt="" loading="lazy" /></div>
+              <div class="slap-wall__col"><img src="/mixtiles-site/assets/images/products/slap-dan-snow-monkey.webp" alt="" loading="lazy" /><img src="/mixtiles-site/assets/images/products/slap-yako-gorilla.webp" alt="" loading="lazy" /><img src="/mixtiles-site/assets/images/products/slap-chowa-pagoda-fuji.webp" alt="" loading="lazy" /><img src="/mixtiles-site/assets/images/products/slap-kikan-train-city-night.webp" alt="" loading="lazy" /></div>
+              <div class="slap-wall__col"><img src="/mixtiles-site/assets/images/products/slap-sokoku-tiger-snake.webp" alt="" loading="lazy" /><img src="/mixtiles-site/assets/images/products/slap-kikan-train-city-night.webp" alt="" loading="lazy" /><img src="/mixtiles-site/assets/images/products/slap-dan-snow-monkey.webp" alt="" loading="lazy" /><img src="/mixtiles-site/assets/images/products/slap-yako-gorilla.webp" alt="" loading="lazy" /></div>
+              <div class="slap-wall__col"><img src="/mixtiles-site/assets/images/products/slap-yako-gorilla.webp" alt="" loading="lazy" /><img src="/mixtiles-site/assets/images/products/slap-chowa-pagoda-fuji.webp" alt="" loading="lazy" /><img src="/mixtiles-site/assets/images/products/slap-sokoku-tiger-snake.webp" alt="" loading="lazy" /><img src="/mixtiles-site/assets/images/products/slap-kikan-train-city-night.webp" alt="" loading="lazy" /></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="promo-tile theme-alt" data-brand="mixtiles" aria-labelledby="pets-title">
+          <h3 class="promo-tile__title" id="pets-title">AI Pet Portraits</h3>
+          <p class="promo-tile__sub">Your pet, as royalty.</p>
+          <div class="btn-row">
+            <a class="btn btn--primary" href="/mixtiles-site/mixtiles/#ai-pets">Learn more</a>
+            <a class="btn btn--ghost" href="https://www.mixtiles.com/" target="_blank" rel="noopener">Create</a>
+          </div>
+          <!-- one pet photo in, three framed portrait styles out -->
+          <div class="promo-tile__media art-fan">
+            <img class="art-fan__print art-fan__print--left" src="/mixtiles-site/assets/images/products/ai-pet-kid-print.webp" alt="An illustrated portrait of a boy hugging his dog" loading="lazy" />
+            <img class="art-fan__print art-fan__print--right" src="/mixtiles-site/assets/images/products/ai-pet-parrot-print.webp" alt="A watercolour portrait of a parrot named Gizmo" loading="lazy" />
+            <img class="art-fan__print art-fan__print--center" src="/mixtiles-site/assets/images/products/ai-pet-royal-print.webp" alt="A royal oil-painting portrait of a dog named Sir Biscuit" loading="lazy" />
+            <img class="art-fan__before" src="/mixtiles-site/assets/images/products/ai-pet-original-dog.webp" alt="The original photo of the dog" loading="lazy" />
+          </div>
+        </section>
+
+        <section class="promo-tile theme-alt" data-brand="mixtiles" aria-labelledby="templates-title">
+          <h3 class="promo-tile__title" id="templates-title">AI Templates</h3>
+          <p class="promo-tile__sub">Your photos, turned into art.</p>
+          <div class="btn-row">
+            <a class="btn btn--primary" href="/mixtiles-site/mixtiles/#ai-templates">Learn more</a>
+            <a class="btn btn--ghost" href="https://www.mixtiles.com/" target="_blank" rel="noopener">Create</a>
+          </div>
+          <!-- before and after: a travel selfie becomes a vintage Tokyo poster -->
+          <div class="promo-tile__media art-transform">
+            <img class="art-transform__before" src="/mixtiles-site/assets/images/products/ai-tokyo-selfie.webp" alt="A couple's selfie in Tokyo at night" loading="lazy" />
+            <span class="art-transform__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+            </span>
+            <img class="art-transform__after" src="/mixtiles-site/assets/images/products/ai-tokyo-poster-print.webp" alt="The same selfie turned into a framed vintage Tokyo travel poster" loading="lazy" />
+          </div>
+        </section>
+
+        <section class="promo-tile theme-alt" data-brand="oasis" aria-labelledby="bulbs-title">
+          <h3 class="promo-tile__title" id="bulbs-title">Oasis Bulbs</h3>
+          <p class="promo-tile__sub">Sunlight for the lamps you own.</p>
+          <div class="btn-row">
+            <a class="btn btn--primary" href="/mixtiles-site/oasis/#lights">Learn more</a>
+            <a class="btn btn--ghost" href="https://heyoasis.com/en" target="_blank" rel="noopener">Shop</a>
+          </div>
+          <div class="promo-tile__media promo-tile__media--contain">
+            <img src="/mixtiles-site/assets/images/products/oasis-bulb-row.webp" alt="Three Oasis smart bulbs glowing warm: a candle bulb, a filament globe and a standard bulb" loading="lazy" />
+          </div>
+        </section>
+
+        <section class="promo-tile promo-tile--photo theme-alt" data-brand="easyplant" aria-labelledby="greener-title">
+          <h3 class="promo-tile__title" id="greener-title">Greener</h3>
+          <p class="promo-tile__sub">A plant doctor in your pocket.</p>
+          <div class="btn-row">
+            <a class="btn btn--primary" href="/mixtiles-site/easyplant/#greener">Learn more</a>
+          </div>
+          <div class="promo-tile__media promo-tile__media--clear">
+            <img src="/mixtiles-site/assets/images/products/greener-diagnosis.webp" alt="The Greener app on a phone, diagnosing an overwatered palm" loading="lazy" style="object-position: 50% 50%" />
+          </div>
+        </section>
+      </div>
+
+      <!-- ============================== ECOSYSTEM ============================== -->
+      <section class="section ecosystem theme-light" id="ecosystem" data-brand="ecosystem" aria-labelledby="ecosystem-title">
+        <div class="container split">
+          <div class="split__text" data-reveal="fade-up">
+            <h2 class="ecosystem__title" id="ecosystem-title">One home. <span class="gradient-text">One system.</span></h2>
+            <p class="lede">Art, plants, light and music, all connected.</p>
+          </div>
+          <div class="media ecosystem__media" data-video="in-view" data-reveal="zoom">
+            <video loop muted playsinline preload="metadata" poster="/mixtiles-site/assets/images/posters/ecosystem.webp" aria-label="A living room where the light, plants, art and speaker connect to each other">
+              <source src="/mixtiles-site/assets/videos/ecosystem.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div class="site-footer__brand">
+        <img src="/mixtiles-site/assets/images/brand/mixtiles-logo.svg" width="106" height="22" alt="Mixtiles" />
+        <p>Beautiful, AI-native products for the home: photo walls, self-watering plants, natural light and music that reads the room.</p>
+      </div>
+      <div>
+        <h4>Products</h4>
+        <ul>
+          <li><a href="/mixtiles-site/mixtiles/">Mixtiles</a></li>
+          <li><a href="/mixtiles-site/easyplant/">easyplant</a></li>
+          <li><a href="/mixtiles-site/oasis/">Oasis</a></li>
+          <li><a href="/mixtiles-site/dj/">DJ</a></li>
+          <li><a href="/mixtiles-site/#ecosystem">The ecosystem</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="https://www.mixtiles.com/" target="_blank" rel="noopener">mixtiles.com</a></li>
+          <li><a href="https://easyplant.com/" target="_blank" rel="noopener">easyplant.com</a></li>
+          <li><a href="https://heyoasis.com/en" target="_blank" rel="noopener">heyoasis.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="https://www.mixtiles.com/careers" target="_blank" rel="noopener">Careers</a></li>
+          <li><a href="https://www.mixtiles.com/contact" target="_blank" rel="noopener">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 Mixtiles. All rights reserved.</span>
+      <div class="site-footer__social">
+        <a href="https://www.instagram.com/mixtiles/" target="_blank" rel="noopener" aria-label="Mixtiles on Instagram"><img src="/mixtiles-site/assets/images/logo-instagram.svg" alt="" /></a>
+        <a href="https://www.facebook.com/mixtiles" target="_blank" rel="noopener" aria-label="Mixtiles on Facebook"><img src="/mixtiles-site/assets/images/logo-facebook.svg" alt="" /></a>
+        <a href="https://www.linkedin.com/company/mixtiles/" target="_blank" rel="noopener" aria-label="Mixtiles on LinkedIn"><img src="/mixtiles-site/assets/images/logo-linkedin.svg" alt="" /></a>
+        <a href="https://www.youtube.com/@mixtiles" target="_blank" rel="noopener" aria-label="Mixtiles on YouTube"><img src="/mixtiles-site/assets/images/logo-youtube.svg" alt="" /></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>

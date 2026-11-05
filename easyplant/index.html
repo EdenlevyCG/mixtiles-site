@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>easyplant: plants that water themselves | Mixtiles</title>
+<meta name="description" content="easyplant makes real plants easy: self-watering plants and 7-ft trees you water once a month, the easyplant Sensor, the Greener plant-care app and the easyplant 2.0 smart pot." />
+<meta name="theme-color" content="#000000" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Mixtiles" />
+<meta property="og:title" content="easyplant: plants that water themselves | Mixtiles" />
+<meta property="og:description" content="easyplant makes real plants easy: self-watering plants and 7-ft trees you water once a month, the easyplant Sensor, the Greener plant-care app and the easyplant 2.0 smart pot." />
+<meta property="og:image" content="/mixtiles-site/assets/images/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="icon" href="/mixtiles-site/assets/images/brand/favicon.svg" type="image/svg+xml" />
+
+<!-- Mark JS as available before first paint so reveal elements start hidden (no flash). -->
+<script>
+  document.documentElement.classList.add('js');
+</script>
+
+<!-- Page-to-page transitions (cross-document View Transitions): the old page fades out and lifts
+     away, the new one fades in, the navbar stays put. Inline so every page opts in before its
+     first paint (in dev, Vite injects the stylesheets with JS, too late). Unsupported browsers
+     just change page as usual. -->
+<style>@view-transition{navigation:auto}.site-nav{view-transition-name:site-nav}::view-transition-old(root){animation:.3s cubic-bezier(.65,0,.35,1) both page-out}::view-transition-new(root){animation:.45s cubic-bezier(.25,1,.5,1) both page-in}@keyframes page-out{to{opacity:0;transform:translateY(-12px)}}@keyframes page-in{0%{opacity:0;transform:translateY(16px)}}@media (prefers-reduced-motion:reduce){::view-transition-group(*){animation:none!important}::view-transition-old(*){animation:none!important}::view-transition-new(*){animation:none!important}}</style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400..800;1,400..800&display=swap" />
+
+    <script type="module" crossorigin src="/mixtiles-site/_build/main-BGwwTnoW.js"></script>
+    <link rel="stylesheet" crossorigin href="/mixtiles-site/_build/main-DkGj8h0A.css">
+  </head>
+
+  <body data-hero="light" data-page="easyplant">
+    <a class="skip-link" href="#main">Skip to content</a>
+<header class="site-nav" data-nav>
+  <div class="site-nav__line"></div>
+  <div class="site-nav__inner">
+    <a href="/mixtiles-site/" class="site-nav__logo" aria-label="Mixtiles home">
+      <img src="/mixtiles-site/assets/images/brand/mixtiles-logo-white.svg" width="120" height="15" alt="Mixtiles" />
+    </a>
+    <div class="site-nav__menu">
+      <nav class="site-nav__links" id="site-menu" data-nav-menu aria-label="Main">
+        <a href="/mixtiles-site/mixtiles/">Mixtiles</a>
+        <a href="/mixtiles-site/easyplant/">Easyplant</a>
+        <a href="/mixtiles-site/oasis/">Oasis</a>
+        <a href="/mixtiles-site/dj/">DJ</a>
+      </nav>
+      <button type="button" class="site-nav__toggle" data-nav-toggle aria-controls="site-menu" aria-expanded="false" aria-label="Open menu">
+        <span></span>
+      </button>
+    </div>
+    <a class="site-nav__contact" href="https://www.mixtiles.com/contact" target="_blank" rel="noopener">Contact us</a>
+  </div>
+</header>
+
+
+    <main id="main" data-brand="easyplant">
+      <!-- ============================== HERO ==============================
+           Laid out like the apple.com/imac hero: product name, two-line headline, the product film,
+           then a line, short copy, pill buttons and small print (src/styles/pages.css → .marquee).
+           The headline waits and reveals word by word 2s before the plants film ends (data-reveal-cue); the
+           film's opening plant grows into the space it will take. -->
+      <section class="section page-hero marquee theme-light">
+        <div class="container">
+          <h1 class="marquee__eyebrow" data-intro="cue" data-split="words">easyplant</h1>
+          <p class="marquee__headline" data-intro="cue" data-split="words" style="--intro-delay: 0.08s">Plants that<br />water themselves.</p>
+          <div class="marquee__media marquee__media--easyplant" data-video="once-in-view" data-reveal-cue="2" data-intro style="--intro-delay: 0.4s">
+            <video muted playsinline preload="auto" poster="/mixtiles-site/assets/images/posters/easyplant-hero.jpg" aria-label="A collection of easyplant self-watering plants">
+              <source src="/mixtiles-site/assets/videos/easyplant-hero.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="marquee__foot" data-intro style="--intro-delay: 0.3s">
+            <p class="marquee__tagline">Fill it once a month.</p>
+            <p class="marquee__copy">Hand-picked plants in self-watering pots get exactly the water they need.</p>
+            <div class="btn-row">
+              <a class="btn btn--primary" href="https://easyplant.com/" target="_blank" rel="noopener">Shop easyplant</a>
+              <a class="btn btn--ghost" href="#self-watering">How it works</a>
+            </div>
+            <p class="marquee__fine"><span><strong>2M+</strong> plants delivered</span> · <span><strong>4.8/5</strong> from 5,000+ reviews</span> · <span><strong>90-day</strong> plant guarantee</span></p>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ============================== SELF-WATERING ============================== -->
+      <section class="section chapter theme-light" id="self-watering">
+        <div class="container">
+          <div class="chapter__head" data-reveal="fade-up">
+            <span class="eyebrow">Self-watering plants</span>
+            <h2>Water once a month. That's it.</h2>
+            <p class="lede">
+              Every easyplant pot has a hidden, patented water reservoir. Water is drawn from the reservoir to the bottom layer of
+              soil, straight to the roots, so overwatering is rare and underwatering never happens.
+            </p>
+          </div>
+          <div class="captioned captioned--glass" style="--ratio: 1309 / 1600">
+            <figure data-reveal="slide-up" data-reveal-offset="3">
+              <img src="/mixtiles-site/assets/images/products/ep-fill.webp" alt="Pouring water into an easyplant reservoir" loading="lazy" />
+              <figcaption><strong>1. Fill the reservoir once a month</strong>Pour water into the fill cap. No guessing how much.</figcaption>
+            </figure>
+            <figure data-reveal="slide-up" data-reveal-offset="3" style="--reveal-delay: 80ms">
+              <img src="/mixtiles-site/assets/images/products/ep-roots.webp" alt="A cutaway of an easyplant pot showing roots drawing water from the reservoir" loading="lazy" />
+              <figcaption><strong>2. Your plant drinks what it needs</strong>Roots draw water up from the reservoir, exactly as they need it.</figcaption>
+            </figure>
+          </div>
+
+          <div class="split" style="margin-top: clamp(64px, 9vw, 120px)">
+            <div class="split__text" data-reveal="fade-up">
+              <span class="eyebrow">Self watering, longer living</span>
+              <h3>On average, easyplants live six times longer.</h3>
+              <ul class="feature-list">
+                <li><strong>Hand-picked premium plants</strong><span>Only the best plants, delivered fresh from our greenhouse.</span></li>
+                <li><strong>Lifetime access to plant experts</strong><span>Real people to help whenever a plant needs attention.</span></li>
+                <li><strong>A gift that lasts</strong><span>Forget flowers. Give a gift that grows.</span></li>
+                <li><strong>Four sizes</strong><span>From small tabletop plants to huge 1.5 m statement pieces.</span></li>
+              </ul>
+            </div>
+            <div class="media" style="aspect-ratio: 1600 / 1227" data-reveal="zoom">
+              <img src="/mixtiles-site/assets/images/products/ep-experts.webp" alt="Chatting with an easyplant plant expert about a yellow leaf" loading="lazy" />
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ============================== TREES ============================== -->
+      <section class="section chapter theme-alt" id="trees">
+        <div class="container">
+          <div class="chapter__head" data-reveal="fade-up">
+            <span class="eyebrow">Self-watering trees</span>
+            <h2>7-ft trees. Water once a month.</h2>
+            <p class="lede">
+              Statement indoor trees, pre-potted in an 18″ self-watering pot with an 8-litre reservoir. They arrive in a
+              ready-to-roll box. Just wheel it in, fill it and enjoy.
+            </p>
+            <div class="style-chips" aria-label="Species">
+              <span>Bird of Paradise</span><span>Fiddle Leaf Fig</span><span>Areca Palm</span><span>Ficus Audrey</span><span>Rubber Tree</span><span>Spindle Palm</span><span>Marble Schefflera</span>
+            </div>
+          </div>
+          <div class="media" style="aspect-ratio: 2 / 1" data-reveal="zoom">
+            <img src="/mixtiles-site/assets/images/products/ep-trees-hero.webp" alt="A woman beside a 7-ft self-watering tree in a bright living room" loading="lazy" />
+          </div>
+          <div class="cards" style="margin-top: clamp(32px, 4vw, 56px)">
+            <div class="card" data-reveal="slide-up" data-reveal-offset="3"><span class="card__stat gradient-text">75–83″</span><p>Tall, including the pot.</p></div>
+            <div class="card" data-reveal="slide-up" data-reveal-offset="3" style="--reveal-delay: 60ms"><span class="card__stat gradient-text">8 L</span><p>A built-in reservoir holds about a month of water.</p></div>
+            <div class="card" data-reveal="slide-up" data-reveal-offset="3" style="--reveal-delay: 120ms"><span class="card__stat gradient-text">1 year</span><p>90-day guarantee, extendable to a full year.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================== SENSOR ============================== -->
+      <section class="section chapter theme-light" id="sensor">
+        <div class="container">
+          <div class="chapter__head" data-reveal="fade-up">
+            <span class="eyebrow">easyplant Sensor</span>
+            <h2>Give any plant a voice.</h2>
+            <p class="lede">
+              Most plants don't die from neglect. They die from guessing. Slide the Sensor into the soil of any plant and it
+              continuously reads moisture and light, so the Sensor app can tell you exactly how to care for it.
+            </p>
+          </div>
+          <div class="media" style="aspect-ratio: 16 / 9" data-video="in-view" data-reveal="zoom">
+            <video loop muted playsinline preload="metadata" poster="/mixtiles-site/assets/images/posters/sensor.webp" aria-label="The easyplant Sensor assembling and sliding into a plant pot">
+              <source src="/mixtiles-site/assets/videos/sensor.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="split split--reverse" style="margin-top: clamp(48px, 6vw, 80px)">
+            <div class="split__text" data-reveal="fade-up">
+              <ul class="feature-list" style="margin-top: 0">
+                <li><strong>Works with the plants you have</strong><span>Fits into the pot, not on top of it. Best for indoor pots 6–12″ wide.</span></li>
+                <li><strong>Knows when it's time to water</strong><span>A push notification the moment a plant gets thirsty.</span></li>
+                <li><strong>Tap for a quick check</strong><span>The Sensor glows green when all is good and blue when it needs water.</span></li>
+                <li><strong>One dashboard, every plant</strong><span>Moisture and light history for every Sensor in your home.</span></li>
+              </ul>
+            </div>
+            <div class="phones" data-reveal="slide-up" data-reveal-offset="3">
+              <img src="/mixtiles-site/assets/images/products/sensor-screen-plants.webp" alt="The Sensor app's plant list with statuses" loading="lazy" />
+              <img src="/mixtiles-site/assets/images/products/sensor-screen-checkup.webp" alt="A Sensor app checkup saying the plant seems overwatered" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================== GREENER ============================== -->
+      <section class="section chapter theme-alt" id="greener">
+        <div class="container">
+          <div class="split">
+            <div class="split__text" data-reveal="fade-up">
+              <span class="eyebrow">Greener app</span>
+              <h2>A plant doctor in your pocket.</h2>
+              <p class="lede">Snap a photo. Greener tells you what's wrong and exactly what to do next.</p>
+              <p class="muted" style="margin-top: 20px; font-size: var(--fs-small)">Free on the App Store.</p>
+            </div>
+            <div class="media" style="aspect-ratio: 16 / 9" data-video="in-view" data-reveal="zoom">
+              <video loop muted playsinline preload="metadata" poster="/mixtiles-site/assets/images/posters/greener.webp" aria-label="Photographing a plant with Greener and getting a diagnosis">
+                <source src="/mixtiles-site/assets/videos/greener.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================== EASYPLANT 2.0 ============================== -->
+      <section class="section chapter theme-light" id="easyplant-2">
+        <div class="container">
+          <div class="chapter__head chapter__head--center" data-reveal="fade-up">
+            <span class="badge">Coming soon</span>
+            <h2 style="margin-top: 18px">easyplant <span class="gradient-text">2.0</span></h2>
+            <p class="lede">
+              The smart pot. A system that continuously measures the plant's status, adjusts watering to its needs automatically,
+              and lets you know when anything needs attention. Plant care that's easier, smarter and healthier.
+            </p>
+          </div>
+          <div class="media" style="aspect-ratio: 16 / 9" data-video="once-in-view" data-reveal="zoom">
+            <video muted playsinline preload="metadata" poster="/mixtiles-site/assets/images/posters/easyplant-2.webp" aria-label="The easyplant 2.0 smart pot with its glowing status light">
+              <source src="/mixtiles-site/assets/videos/easyplant-2.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="cards" style="margin-top: clamp(32px, 4vw, 56px)">
+            <div class="card" data-reveal="slide-up" data-reveal-offset="3"><h3>Always measuring</h3><p>Built-in sensing tracks the plant's status around the clock.</p></div>
+            <div class="card" data-reveal="slide-up" data-reveal-offset="3" style="--reveal-delay: 60ms"><h3>Waters itself, smarter</h3><p>Watering adapts automatically to what each plant needs.</p></div>
+            <div class="card" data-reveal="slide-up" data-reveal-offset="3" style="--reveal-delay: 120ms"><h3>Lets you know</h3><p>A glowing status light and a notification when your plant needs attention.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section theme-alt section--tight" aria-labelledby="more-brands">
+  <div class="container">
+    <div class="section-head section-head--left">
+      <h2 id="more-brands" style="font-size: var(--fs-h3)">More from Mixtiles</h2>
+    </div>
+    <div class="brand-strip">
+      <a class="brand-strip__item" data-brand="mixtiles" href="/mixtiles-site/mixtiles/">
+        <strong class="gradient-text">Mixtiles</strong><span>Photo walls, books and AI art</span>
+      </a>
+      <a class="brand-strip__item" data-brand="easyplant" href="/mixtiles-site/easyplant/">
+        <strong class="gradient-text">easyplant</strong><span>Self-watering plants and smart plant care</span>
+      </a>
+      <a class="brand-strip__item" data-brand="oasis" href="/mixtiles-site/oasis/">
+        <strong class="gradient-text">Oasis</strong><span>Natural, ambient lighting</span>
+      </a>
+      <a class="brand-strip__item" data-brand="dj" href="/mixtiles-site/dj/">
+        <strong class="gradient-text">DJ</strong><span>Music that reads the room</span>
+      </a>
+      <a class="brand-strip__item" data-brand="ecosystem" href="/mixtiles-site/#ecosystem">
+        <strong class="gradient-text">The ecosystem</strong><span>One home that works as a system</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+    </main>
+
+    <footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div class="site-footer__brand">
+        <img src="/mixtiles-site/assets/images/brand/mixtiles-logo.svg" width="106" height="22" alt="Mixtiles" />
+        <p>Beautiful, AI-native products for the home: photo walls, self-watering plants, natural light and music that reads the room.</p>
+      </div>
+      <div>
+        <h4>Products</h4>
+        <ul>
+          <li><a href="/mixtiles-site/mixtiles/">Mixtiles</a></li>
+          <li><a href="/mixtiles-site/easyplant/">easyplant</a></li>
+          <li><a href="/mixtiles-site/oasis/">Oasis</a></li>
+          <li><a href="/mixtiles-site/dj/">DJ</a></li>
+          <li><a href="/mixtiles-site/#ecosystem">The ecosystem</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="https://www.mixtiles.com/" target="_blank" rel="noopener">mixtiles.com</a></li>
+          <li><a href="https://easyplant.com/" target="_blank" rel="noopener">easyplant.com</a></li>
+          <li><a href="https://heyoasis.com/en" target="_blank" rel="noopener">heyoasis.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="https://www.mixtiles.com/careers" target="_blank" rel="noopener">Careers</a></li>
+          <li><a href="https://www.mixtiles.com/contact" target="_blank" rel="noopener">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 Mixtiles. All rights reserved.</span>
+      <div class="site-footer__social">
+        <a href="https://www.instagram.com/mixtiles/" target="_blank" rel="noopener" aria-label="Mixtiles on Instagram"><img src="/mixtiles-site/assets/images/logo-instagram.svg" alt="" /></a>
+        <a href="https://www.facebook.com/mixtiles" target="_blank" rel="noopener" aria-label="Mixtiles on Facebook"><img src="/mixtiles-site/assets/images/logo-facebook.svg" alt="" /></a>
+        <a href="https://www.linkedin.com/company/mixtiles/" target="_blank" rel="noopener" aria-label="Mixtiles on LinkedIn"><img src="/mixtiles-site/assets/images/logo-linkedin.svg" alt="" /></a>
+        <a href="https://www.youtube.com/@mixtiles" target="_blank" rel="noopener" aria-label="Mixtiles on YouTube"><img src="/mixtiles-site/assets/images/logo-youtube.svg" alt="" /></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>

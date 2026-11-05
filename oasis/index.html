@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Oasis: the warmth your home is missing | Mixtiles</title>
+<meta name="description" content="Oasis ambient lights and smart bulbs shift tones just like the sun: brighter mornings, cozy warm evenings. Set and forget with the Oasis app." />
+<meta name="theme-color" content="#000000" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Mixtiles" />
+<meta property="og:title" content="Oasis: the warmth your home is missing | Mixtiles" />
+<meta property="og:description" content="Oasis ambient lights and smart bulbs shift tones just like the sun: brighter mornings, cozy warm evenings. Set and forget with the Oasis app." />
+<meta property="og:image" content="/mixtiles-site/assets/images/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="icon" href="/mixtiles-site/assets/images/brand/favicon.svg" type="image/svg+xml" />
+
+<!-- Mark JS as available before first paint so reveal elements start hidden (no flash). -->
+<script>
+  document.documentElement.classList.add('js');
+</script>
+
+<!-- Page-to-page transitions (cross-document View Transitions): the old page fades out and lifts
+     away, the new one fades in, the navbar stays put. Inline so every page opts in before its
+     first paint (in dev, Vite injects the stylesheets with JS, too late). Unsupported browsers
+     just change page as usual. -->
+<style>@view-transition{navigation:auto}.site-nav{view-transition-name:site-nav}::view-transition-old(root){animation:.3s cubic-bezier(.65,0,.35,1) both page-out}::view-transition-new(root){animation:.45s cubic-bezier(.25,1,.5,1) both page-in}@keyframes page-out{to{opacity:0;transform:translateY(-12px)}}@keyframes page-in{0%{opacity:0;transform:translateY(16px)}}@media (prefers-reduced-motion:reduce){::view-transition-group(*){animation:none!important}::view-transition-old(*){animation:none!important}::view-transition-new(*){animation:none!important}}</style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400..800;1,400..800&display=swap" />
+
+    <script type="module" crossorigin src="/mixtiles-site/_build/main-BGwwTnoW.js"></script>
+    <link rel="stylesheet" crossorigin href="/mixtiles-site/_build/main-DkGj8h0A.css">
+  </head>
+
+  <body data-hero="light" data-page="oasis">
+    <a class="skip-link" href="#main">Skip to content</a>
+<header class="site-nav" data-nav>
+  <div class="site-nav__line"></div>
+  <div class="site-nav__inner">
+    <a href="/mixtiles-site/" class="site-nav__logo" aria-label="Mixtiles home">
+      <img src="/mixtiles-site/assets/images/brand/mixtiles-logo-white.svg" width="120" height="15" alt="Mixtiles" />
+    </a>
+    <div class="site-nav__menu">
+      <nav class="site-nav__links" id="site-menu" data-nav-menu aria-label="Main">
+        <a href="/mixtiles-site/mixtiles/">Mixtiles</a>
+        <a href="/mixtiles-site/easyplant/">Easyplant</a>
+        <a href="/mixtiles-site/oasis/">Oasis</a>
+        <a href="/mixtiles-site/dj/">DJ</a>
+      </nav>
+      <button type="button" class="site-nav__toggle" data-nav-toggle aria-controls="site-menu" aria-expanded="false" aria-label="Open menu">
+        <span></span>
+      </button>
+    </div>
+    <a class="site-nav__contact" href="https://www.mixtiles.com/contact" target="_blank" rel="noopener">Contact us</a>
+  </div>
+</header>
+
+
+    <main id="main" data-brand="oasis">
+      <!-- ============================== HERO ==============================
+           Laid out like the apple.com/imac hero: product name, two-line headline, the product film,
+           then a line, short copy, pill buttons and small print (src/styles/pages.css → .marquee). -->
+      <section class="section page-hero marquee theme-light">
+        <div class="container">
+          <h1 class="marquee__eyebrow" data-intro="cue" data-split="words">Oasis</h1>
+          <p class="marquee__headline" data-intro="cue" data-split="words" style="--intro-delay: 0.08s">The warmth your<br />home is missing.</p>
+          <div class="marquee__media marquee__media--oasis" data-video="once-in-view" data-reveal-cue="2">
+            <video muted playsinline preload="auto" poster="/mixtiles-site/assets/images/posters/oasis-hero.webp" aria-label="Oasis bulbs and the Ambient light floating into place">
+              <source src="/mixtiles-site/assets/videos/oasis-hero.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="marquee__foot" data-intro style="--intro-delay: 0.3s">
+            <p class="marquee__tagline">Light that follows the sun.</p>
+            <p class="marquee__copy">Ambient lights and smart bulbs that shift from bright mornings to cozy, warm evenings.</p>
+            <div class="btn-row">
+              <a class="btn btn--primary" href="https://heyoasis.com/en" target="_blank" rel="noopener">Shop Oasis</a>
+              <a class="btn btn--ghost" href="#family">Explore</a>
+            </div>
+            <p class="marquee__fine"><span>Loved in <strong>100,000+ homes</strong></span> · <span><strong>4.9</strong> on the App Store</span> · <span><strong>100-day</strong> free returns</span></p>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ============================== THE OASIS FAMILY ==============================
+           After heyoasis.com's "The Oasis family" cards -->
+      <section class="section oasis-family" id="family" aria-labelledby="family-title">
+        <div class="container">
+          <div class="oasis-family__head" data-reveal="fade-up">
+            <span class="oasis-family__eyebrow">The Oasis family</span>
+            <h2 id="family-title">A complete glow for your home</h2>
+          </div>
+          <div class="oasis-family__grid">
+            <article class="oasis-family__card" data-reveal="slide-up" data-reveal-offset="3">
+              <img src="/mixtiles-site/assets/images/products/oasis-family-ambient.webp" width="1000" height="1000" alt="Oasis Ambient" loading="lazy" />
+              <h3>Ambient</h3>
+              <p>Creates a gentle wall glow that transforms any space</p>
+              <a class="oasis-family__btn" href="https://heyoasis.com/en" target="_blank" rel="noopener">Shop Oasis</a>
+            </article>
+            <article class="oasis-family__card" data-reveal="slide-up" data-reveal-offset="3" style="--reveal-delay: 60ms">
+              <img src="/mixtiles-site/assets/images/products/oasis-family-standard.webp" width="1000" height="1000" alt="Oasis Standard bulb" loading="lazy" />
+              <h3>Standard bulb</h3>
+              <p>Fits the lamps and ceiling lights you already own</p>
+              <a class="oasis-family__btn" href="https://heyoasis.com/en" target="_blank" rel="noopener">Shop Oasis</a>
+            </article>
+            <article class="oasis-family__card" data-reveal="slide-up" data-reveal-offset="3" style="--reveal-delay: 120ms">
+              <img src="/mixtiles-site/assets/images/products/oasis-family-thin.webp" width="1000" height="1000" alt="Oasis Thin screw bulb" loading="lazy" />
+              <h3>Thin screw</h3>
+              <p>Made for chandeliers, sconces, and candle-style fixtures</p>
+              <a class="oasis-family__btn" href="https://heyoasis.com/en" target="_blank" rel="noopener">Shop Oasis</a>
+            </article>
+            <article class="oasis-family__card" data-reveal="slide-up" data-reveal-offset="3" style="--reveal-delay: 180ms">
+              <img src="/mixtiles-site/assets/images/products/oasis-family-filament.webp" width="1000" height="1000" alt="Oasis Filament bulb" loading="lazy" />
+              <h3>Filament</h3>
+              <p>Amber glass and a glowing coil, for an easy vintage warmth</p>
+              <span class="oasis-family__soon">Coming soon</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================== SET UP IN MINUTES ==============================
+           After heyoasis.com: the step in the middle of the screen is active and its film plays in
+           the sticky frame (src/modules/scroll-steps.js). Phones show each film under its step. -->
+      <section class="section oasis-setup" id="setup" aria-labelledby="setup-title" data-scroll-steps>
+        <div class="container">
+          <h2 class="oasis-setup__title" id="setup-title" data-reveal="fade-up">Set up in minutes</h2>
+          <div class="oasis-setup__grid">
+            <ol class="oasis-setup__steps">
+              <li class="oasis-setup__step" data-step>
+                <span class="oasis-setup__num">1</span>
+                <h3>Place Oasis Ambients</h3>
+                <p>Set them on shelves, desks or the floor, anywhere the room needs warmth.</p>
+                <div class="oasis-setup__inline media" data-video="in-view">
+                  <video loop muted playsinline preload="none" poster="/mixtiles-site/assets/images/posters/oasis-setup-1.webp" aria-label="An Oasis Ambient glowing on a stack of books">
+                    <source src="/mixtiles-site/assets/videos/oasis-setup-1.mp4" type="video/mp4" />
+                  </video>
+                </div>
+              </li>
+              <li class="oasis-setup__step" data-step>
+                <span class="oasis-setup__num">2</span>
+                <h3>Switch to Oasis bulbs</h3>
+                <p>Swap the bulbs in the fixtures you already own. No tools, no installers.</p>
+                <div class="oasis-setup__inline media" data-video="in-view">
+                  <video loop muted playsinline preload="none" poster="/mixtiles-site/assets/images/posters/oasis-setup-2.webp" aria-label="A hand holding an Oasis bulb in a warmly lit room">
+                    <source src="/mixtiles-site/assets/videos/oasis-setup-2.mp4" type="video/mp4" />
+                  </video>
+                </div>
+              </li>
+              <li class="oasis-setup__step" data-step>
+                <span class="oasis-setup__num">3</span>
+                <h3>Set and forget</h3>
+                <p>One tap, and every light follows the sun together.</p>
+                <div class="oasis-setup__inline media" data-video="in-view">
+                  <video loop muted playsinline preload="none" poster="/mixtiles-site/assets/images/posters/oasis-setup-3.webp" aria-label="Setting a light cycle in the Oasis app">
+                    <source src="/mixtiles-site/assets/videos/oasis-setup-3.mp4" type="video/mp4" />
+                  </video>
+                </div>
+              </li>
+            </ol>
+            <div class="oasis-setup__media" aria-hidden="true">
+              <div class="oasis-setup__frame" data-step-media>
+                <div class="oasis-setup__film is-active">
+                  <video loop muted playsinline preload="auto" poster="/mixtiles-site/assets/images/posters/oasis-setup-1.webp" aria-label="An Oasis Ambient glowing on a stack of books">
+                    <source src="/mixtiles-site/assets/videos/oasis-setup-1.mp4" type="video/mp4" />
+                  </video>
+                </div>
+                <div class="oasis-setup__film">
+                  <video loop muted playsinline preload="metadata" poster="/mixtiles-site/assets/images/posters/oasis-setup-2.webp" aria-label="A hand holding an Oasis bulb in a warmly lit room">
+                    <source src="/mixtiles-site/assets/videos/oasis-setup-2.mp4" type="video/mp4" />
+                  </video>
+                </div>
+                <div class="oasis-setup__film">
+                  <video loop muted playsinline preload="metadata" poster="/mixtiles-site/assets/images/posters/oasis-setup-3.webp" aria-label="Setting a light cycle in the Oasis app">
+                    <source src="/mixtiles-site/assets/videos/oasis-setup-3.mp4" type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================== DAY & NIGHT (after heyoasis.com) ============================== -->
+      <section class="section oasis-moments" aria-label="Oasis for sleep and waking">
+        <div class="container">
+          <div class="oasis-moments__grid">
+            <article class="oasis-moments__card" data-reveal="slide-up" data-reveal-offset="3">
+              <img src="/mixtiles-site/assets/images/products/oasis-deeper-sleep.webp" alt="A bedroom in warm evening light" loading="lazy" />
+              <div class="oasis-moments__text">
+                <h3>Deeper Sleep</h3>
+                <p>Evenings warm like a sunset, so your body can wind down</p>
+              </div>
+            </article>
+            <article class="oasis-moments__card" data-reveal="slide-up" data-reveal-offset="3" style="--reveal-delay: 80ms">
+              <img src="/mixtiles-site/assets/images/products/oasis-red-mode.webp" alt="A parent holding a baby in a nursery lit red" loading="lazy" />
+              <div class="oasis-moments__text">
+                <h3>Pure red mode</h3>
+                <p>Red light with zero blue, so night trips won’t wake you up</p>
+              </div>
+            </article>
+            <article class="oasis-moments__card" data-reveal="slide-up" data-reveal-offset="3" style="--reveal-delay: 160ms">
+              <img src="/mixtiles-site/assets/images/products/oasis-wake-up.webp" alt="A man smiling in bed as morning light rises" loading="lazy" />
+              <div class="oasis-moments__text">
+                <h3>Wake up with light</h3>
+                <p>Set your lights to rise in the morning, so you can wake gently</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================== AMBIENT + BULBS ============================== -->
+      <section class="section chapter theme-dark" id="lights">
+        <div class="container">
+          <div class="split">
+            <div class="split__text" data-reveal="fade-up">
+              <span class="eyebrow">Follows the sun</span>
+              <h2>Set it once. The light does the rest.</h2>
+              <p class="lede">
+                Oasis automatically shifts tones from brighter mornings to cozy, warm evenings, layered around the room the way
+                designers light a space.
+              </p>
+              <ul class="feature-list">
+                <li><strong>Oasis Ambient</strong><span>A wall-facing ambient light that fills your space with layered light.</span></li>
+                <li><strong>Standard &amp; Candle bulbs</strong><span>For lamps, ceiling lights, chandeliers and sconces.</span></li>
+                <li><strong>No hub, no installers</strong><span>Connects over Wi-Fi in minutes. Works with Google Home and Alexa.</span></li>
+              </ul>
+            </div>
+            <div class="media" data-video="in-view" data-reveal="zoom" style="aspect-ratio: 1000 / 1028; max-width: 560px; justify-self: center; width: 100%">
+              <video loop muted playsinline preload="metadata" poster="/mixtiles-site/assets/images/posters/oasis-hardware.webp" aria-label="An exploded view of the Oasis Ambient light">
+                <source src="/mixtiles-site/assets/videos/oasis-hardware.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+
+          <div class="captioned captioned--3 captioned--glass" style="--ratio: 1; margin-top: clamp(48px, 6vw, 80px)">
+            <figure data-reveal="slide-up" data-reveal-offset="3">
+              <img src="/mixtiles-site/assets/images/products/oasis-ambient-scene.webp" alt="An Oasis Ambient glowing beside a plant at night" loading="lazy" />
+              <figcaption><strong>Oasis Ambient</strong>500 lm of warm, wall-washing light. Place 2–3 per wall.</figcaption>
+            </figure>
+            <figure data-reveal="slide-up" data-reveal-offset="3" style="--reveal-delay: 60ms">
+              <img src="/mixtiles-site/assets/images/products/oasis-bulb-lamp.webp" alt="An Oasis bulb in a table lamp" loading="lazy" />
+              <figcaption><strong>Standard bulb</strong>1,100 lm. Fits the lamps and ceiling lights you already own.</figcaption>
+            </figure>
+            <figure data-reveal="slide-up" data-reveal-offset="3" style="--reveal-delay: 120ms">
+              <img src="/mixtiles-site/assets/images/products/oasis-bedroom.webp" alt="A bedroom lit by Oasis candle bulbs" loading="lazy" />
+              <figcaption><strong>Candle bulb</strong>400 lm for chandeliers, sconces and candle-style fixtures.</figcaption>
+            </figure>
+          </div>
+
+          <div class="cards" style="margin-top: clamp(32px, 4vw, 56px)">
+            <div class="card" data-reveal="slide-up" data-reveal-offset="3"><span class="card__stat gradient-text">1000–4000K</span><p>From pure red to crisp daylight.</p></div>
+            <div class="card" data-reveal="slide-up" data-reveal-offset="3" style="--reveal-delay: 60ms"><span class="card__stat gradient-text">25,000+ h</span><p>About 8–10 years of light per bulb.</p></div>
+            <div class="card" data-reveal="slide-up" data-reveal-offset="3" style="--reveal-delay: 120ms"><span class="card__stat gradient-text">CRI 90+</span><p>Flicker-free, true-to-life colour.</p></div>
+            <div class="card" data-reveal="slide-up" data-reveal-offset="3" style="--reveal-delay: 180ms"><span class="card__stat gradient-text">&lt; $2/yr</span><p>To run a bulb. Under $1 for an Ambient.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================== FOLLOWS THE SUN ============================== -->
+      <section class="section chapter theme-dark" id="follows-the-sun">
+        <div class="container">
+          <div class="chapter__head chapter__head--center" data-reveal="fade-up">
+            <span class="eyebrow">Ambient &amp; bulbs</span>
+            <h2>Layered light for every room.</h2>
+            <p class="lede">Oasis Ambients wash your walls with cozy, layered light, and Oasis bulbs fit the lamps and ceiling lights you already own. Together, every light in the room follows the sun.</p>
+          </div>
+          <div class="media" style="aspect-ratio: 16 / 9" data-video="in-view" data-reveal="zoom">
+            <video loop muted playsinline preload="metadata" poster="/mixtiles-site/assets/images/posters/oasis-layered-lighting.webp" aria-label="A room lit in warm layers by Oasis">
+              <source src="/mixtiles-site/assets/videos/oasis-layered-lighting.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="cards" style="margin-top: clamp(32px, 4vw, 56px)">
+            <div class="card" data-reveal="slide-up" data-reveal-offset="3"><h3>Shifts like the sun</h3><p>Bright and clear by day, warm and soft by night. All on its own.</p></div>
+            <div class="card" data-reveal="slide-up" data-reveal-offset="3" style="--reveal-delay: 60ms"><h3>Deeper sleep</h3><p>Evenings warm like a sunset, so your body can wind down.</p></div>
+            <div class="card" data-reveal="slide-up" data-reveal-offset="3" style="--reveal-delay: 120ms"><h3>Pure red mode</h3><p>Red light with zero blue, so night trips won't wake you up.</p></div>
+            <div class="card" data-reveal="slide-up" data-reveal-offset="3" style="--reveal-delay: 180ms"><h3>Wake up with light</h3><p>Lights rise gently in the morning, so you can wake naturally.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================== WORKS WITH (after heyoasis.com) ============================== -->
+      <section class="section oasis-works" aria-labelledby="works-title">
+        <div class="container">
+          <h2 class="oasis-works__title" id="works-title" data-reveal="fade-up">Works with</h2>
+          <ul class="oasis-works__list" data-reveal="fade-up" style="--reveal-delay: 80ms">
+            <li><img src="/mixtiles-site/assets/images/oasis/works-google-home.svg" width="96" height="96" alt="" /><span>Google Home</span></li>
+            <li><img src="/mixtiles-site/assets/images/oasis/works-alexa.svg" width="96" height="96" alt="" /><span>Alexa</span></li>
+            <li><img src="/mixtiles-site/assets/images/oasis/works-apple-home.svg" width="96" height="96" alt="" /><span>Apple Home</span><em class="oasis-works__soon">Coming soon</em></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ============================== APP ============================== -->
+      <section class="section chapter theme-alt" id="app">
+        <div class="container">
+          <div class="split split--reverse">
+            <div class="split__text" data-reveal="fade-up">
+              <span class="eyebrow">The Oasis app</span>
+              <h2>Better lighting, built around your day.</h2>
+              <p class="lede">Set up in minutes, then forget about it. The Oasis app gives every room its own light cycle, with no schedules to manage.</p>
+              <ul class="feature-list">
+                <li><strong>Light Cycle</strong><span>Per-room tones (Soft, Amber, Candle and Dusk) timed to your sunset.</span></li>
+                <li><strong>Easy control</strong><span>Dim, change tones or turn off with a tap.</span></li>
+                <li><strong>Rooms &amp; layers</strong><span>Group Ambients and bulbs by room and light them together.</span></li>
+              </ul>
+              <p class="muted" style="margin-top: 20px; font-size: var(--fs-small)">Free on iOS and Android · rated 4.9 from 6,000+ ratings.</p>
+            </div>
+            <div class="phones" data-reveal="slide-up" data-reveal-offset="3">
+              <img src="/mixtiles-site/assets/images/products/oasis-app-screen-day.webp" alt="Oasis app: Follows your day" loading="lazy" />
+              <img src="/mixtiles-site/assets/images/products/oasis-app-screen-layered.webp" alt="Oasis app: Layered lighting" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================== REMOTE ============================== -->
+      <section class="section chapter theme-light" id="remote">
+        <div class="container">
+          <div class="split">
+            <div class="split__text" data-reveal="fade-up">
+              <span class="eyebrow">The Oasis remote</span>
+              <span class="badge" style="margin-left: 8px">Coming with Oasis 2.0</span>
+              <h2>No phone needed.</h2>
+              <p class="lede">A small, tactile remote for the moments you don't want to reach for your phone. Keep it by the sofa, the bed or the door.</p>
+              <ul class="feature-list">
+                <li><strong>Instant control</strong><span>Lights up, down or off in one press.</span></li>
+                <li><strong>For everyone at home</strong><span>Guests and kids can use it without the app.</span></li>
+                <li><strong>One remote, every light</strong><span>Works across Oasis Ambients and bulbs.</span></li>
+              </ul>
+            </div>
+            <div class="media media--f8" data-reveal="zoom" style="aspect-ratio: 1; max-width: 520px; justify-self: center; width: 100%">
+              <img src="/mixtiles-site/assets/images/products/oasis-remote.webp" alt="The Oasis remote" loading="lazy" style="object-fit: contain; padding: 8%" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================== OASIS 2.0 ============================== -->
+      <section class="section chapter theme-dark" id="oasis-2">
+        <div class="container">
+          <div class="chapter__head chapter__head--center" data-reveal="fade-up">
+            <span class="badge">Coming soon</span>
+            <h2 style="margin-top: 18px">Oasis <span class="gradient-text">2.0</span></h2>
+            <p class="lede">The next generation of Oasis: new exposed light bulbs, a woven fabric cable, a simpler reset gesture, a remote, and an AI agent in the app.</p>
+          </div>
+          <div class="media" style="aspect-ratio: 16 / 9" data-video="once-in-view" data-reveal="zoom">
+            <video muted playsinline preload="metadata" poster="/mixtiles-site/assets/images/posters/oasis-2.webp" aria-label="Oasis 2.0 product overview">
+              <source src="/mixtiles-site/assets/videos/oasis-2.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="cards" style="margin-top: clamp(32px, 4vw, 56px)">
+            <div class="card" data-reveal="slide-up" data-reveal-offset="3"><h3>Exposed light bulbs</h3><p>Beautiful bare bulbs designed to be seen.</p></div>
+            <div class="card" data-reveal="slide-up" data-reveal-offset="3" style="--reveal-delay: 60ms"><h3>Fabric cable</h3><p>A woven cable that looks good on any surface.</p></div>
+            <div class="card" data-reveal="slide-up" data-reveal-offset="3" style="--reveal-delay: 120ms"><h3>Reset gesture</h3><p>Reset the light with a simple touch.</p></div>
+            <div class="card" data-reveal="slide-up" data-reveal-offset="3" style="--reveal-delay: 180ms"><h3>AI chat</h3><p>Type "Turn on the living room every Thursday at 5pm" and the Oasis agent builds it.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================== REVIEWS + #OASISLIGHTING (after heyoasis.com) ============================== -->
+      <section class="section oasis-social" aria-labelledby="social-title">
+        <div class="container">
+          <div class="oasis-social__head" data-reveal="fade-up">
+            <h2 class="oasis-social__score" id="social-title">4.9<span>/5</span></h2>
+            <span class="oasis-social__stars oasis-social__stars--big" aria-label="Rated 4.9 out of 5">★★★★★</span>
+            <p>
+              Loved in 100,000+ homes, with 6,000+ reviews on the
+              <a href="https://apps.apple.com/app/oasis-lights/id6499230536" target="_blank" rel="noopener">App Store</a> and
+              <a href="https://www.trustpilot.com/review/heyoasis.com" target="_blank" rel="noopener">Trustpilot</a>
+            </p>
+            <a class="oasis-social__tag" href="https://www.instagram.com/oasis_lighting/" target="_blank" rel="noopener">#oasislighting</a>
+          </div>
+          <div class="oasis-social__grid" data-reveal="fade-up" data-reveal-offset="5">
+            <div class="oasis-social__col">
+              <a class="oasis-social__item oasis-social__photo" href="https://www.instagram.com/oasis_lighting/" target="_blank" rel="noopener">
+                <img src="/mixtiles-site/assets/images/oasis/ig-16.webp" alt="A living room corner in warm Oasis light" loading="lazy" />
+                <svg class="oasis-social__ig" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle class="dot" cx="17.3" cy="6.7" r="1.1"/></svg>
+              </a>
+              <a class="oasis-social__item oasis-social__photo is-tall" href="https://www.instagram.com/oasis_lighting/" target="_blank" rel="noopener">
+                <img src="/mixtiles-site/assets/images/oasis/ig-11.webp" alt="Warm Oasis light on a bedroom wall" loading="lazy" />
+                <svg class="oasis-social__ig" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle class="dot" cx="17.3" cy="6.7" r="1.1"/></svg>
+              </a>
+              <figure class="oasis-social__item oasis-social__quote">
+                <span class="oasis-social__stars" aria-label="5 out of 5 stars">★★★★★</span>
+                <blockquote>Really easy to use, really good quality, love the texture and colors. Love the app.</blockquote>
+                <figcaption><strong>Paul T.</strong>Trustpilot</figcaption>
+              </figure>
+            </div>
+            <div class="oasis-social__col">
+              <a class="oasis-social__item oasis-social__photo is-tall" href="https://www.instagram.com/oasis_lighting/" target="_blank" rel="noopener">
+                <img src="/mixtiles-site/assets/images/oasis/ig-19.webp" alt="An Oasis Ambient beside a plant and an armchair" loading="lazy" />
+                <svg class="oasis-social__ig" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle class="dot" cx="17.3" cy="6.7" r="1.1"/></svg>
+              </a>
+              <figure class="oasis-social__item oasis-social__quote">
+                <span class="oasis-social__stars" aria-label="5 out of 5 stars">★★★★★</span>
+                <blockquote>My home feels so beautiful and cozy with the Oasis lights that I never want to leave at night!</blockquote>
+                <figcaption><strong>Lissette S.</strong>Trustpilot</figcaption>
+              </figure>
+              <a class="oasis-social__item oasis-social__photo" href="https://www.instagram.com/oasis_lighting/" target="_blank" rel="noopener">
+                <img src="/mixtiles-site/assets/images/oasis/ig-15.webp" alt="An Oasis-lit living room at dusk" loading="lazy" />
+                <svg class="oasis-social__ig" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle class="dot" cx="17.3" cy="6.7" r="1.1"/></svg>
+              </a>
+            </div>
+            <div class="oasis-social__col">
+              <figure class="oasis-social__item oasis-social__quote">
+                <span class="oasis-social__stars" aria-label="5 out of 5 stars">★★★★★</span>
+                <blockquote>Love these lights. Don’t even use my lamps anymore. Just the right tones and a mellow light.</blockquote>
+                <figcaption><strong>Chris M.</strong>Trustpilot</figcaption>
+              </figure>
+              <a class="oasis-social__item oasis-social__photo" href="https://www.instagram.com/oasis_lighting/" target="_blank" rel="noopener">
+                <img src="/mixtiles-site/assets/images/oasis/ig-18.webp" alt="A sofa and an Oasis Ambient in golden light" loading="lazy" />
+                <svg class="oasis-social__ig" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle class="dot" cx="17.3" cy="6.7" r="1.1"/></svg>
+              </a>
+              <a class="oasis-social__item oasis-social__photo is-tall" href="https://www.instagram.com/oasis_lighting/" target="_blank" rel="noopener">
+                <img src="/mixtiles-site/assets/images/oasis/ig-17.webp" alt="A wall washed in amber Oasis light" loading="lazy" />
+                <svg class="oasis-social__ig" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle class="dot" cx="17.3" cy="6.7" r="1.1"/></svg>
+              </a>
+            </div>
+            <div class="oasis-social__col">
+              <a class="oasis-social__item oasis-social__photo" href="https://www.instagram.com/oasis_lighting/" target="_blank" rel="noopener">
+                <img src="/mixtiles-site/assets/images/oasis/ig-12.webp" alt="A loft lit only by Oasis lights" loading="lazy" />
+                <svg class="oasis-social__ig" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle class="dot" cx="17.3" cy="6.7" r="1.1"/></svg>
+              </a>
+              <a class="oasis-social__item oasis-social__photo is-tall" href="https://www.instagram.com/oasis_lighting/" target="_blank" rel="noopener">
+                <img src="/mixtiles-site/assets/images/oasis/ig-13.webp" alt="A bedroom glowing with Oasis light" loading="lazy" />
+                <svg class="oasis-social__ig" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle class="dot" cx="17.3" cy="6.7" r="1.1"/></svg>
+              </a>
+              <figure class="oasis-social__item oasis-social__quote">
+                <span class="oasis-social__stars" aria-label="5 out of 5 stars">★★★★★</span>
+                <blockquote>I just love these lights! They create such a calm setting especially at the end of the day!</blockquote>
+                <figcaption><strong>Wendy</strong>Trustpilot</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section theme-alt section--tight" aria-labelledby="more-brands">
+  <div class="container">
+    <div class="section-head section-head--left">
+      <h2 id="more-brands" style="font-size: var(--fs-h3)">More from Mixtiles</h2>
+    </div>
+    <div class="brand-strip">
+      <a class="brand-strip__item" data-brand="mixtiles" href="/mixtiles-site/mixtiles/">
+        <strong class="gradient-text">Mixtiles</strong><span>Photo walls, books and AI art</span>
+      </a>
+      <a class="brand-strip__item" data-brand="easyplant" href="/mixtiles-site/easyplant/">
+        <strong class="gradient-text">easyplant</strong><span>Self-watering plants and smart plant care</span>
+      </a>
+      <a class="brand-strip__item" data-brand="oasis" href="/mixtiles-site/oasis/">
+        <strong class="gradient-text">Oasis</strong><span>Natural, ambient lighting</span>
+      </a>
+      <a class="brand-strip__item" data-brand="dj" href="/mixtiles-site/dj/">
+        <strong class="gradient-text">DJ</strong><span>Music that reads the room</span>
+      </a>
+      <a class="brand-strip__item" data-brand="ecosystem" href="/mixtiles-site/#ecosystem">
+        <strong class="gradient-text">The ecosystem</strong><span>One home that works as a system</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+    </main>
+
+    <footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div class="site-footer__brand">
+        <img src="/mixtiles-site/assets/images/brand/mixtiles-logo.svg" width="106" height="22" alt="Mixtiles" />
+        <p>Beautiful, AI-native products for the home: photo walls, self-watering plants, natural light and music that reads the room.</p>
+      </div>
+      <div>
+        <h4>Products</h4>
+        <ul>
+          <li><a href="/mixtiles-site/mixtiles/">Mixtiles</a></li>
+          <li><a href="/mixtiles-site/easyplant/">easyplant</a></li>
+          <li><a href="/mixtiles-site/oasis/">Oasis</a></li>
+          <li><a href="/mixtiles-site/dj/">DJ</a></li>
+          <li><a href="/mixtiles-site/#ecosystem">The ecosystem</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="https://www.mixtiles.com/" target="_blank" rel="noopener">mixtiles.com</a></li>
+          <li><a href="https://easyplant.com/" target="_blank" rel="noopener">easyplant.com</a></li>
+          <li><a href="https://heyoasis.com/en" target="_blank" rel="noopener">heyoasis.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="https://www.mixtiles.com/careers" target="_blank" rel="noopener">Careers</a></li>
+          <li><a href="https://www.mixtiles.com/contact" target="_blank" rel="noopener">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 Mixtiles. All rights reserved.</span>
+      <div class="site-footer__social">
+        <a href="https://www.instagram.com/mixtiles/" target="_blank" rel="noopener" aria-label="Mixtiles on Instagram"><img src="/mixtiles-site/assets/images/logo-instagram.svg" alt="" /></a>
+        <a href="https://www.facebook.com/mixtiles" target="_blank" rel="noopener" aria-label="Mixtiles on Facebook"><img src="/mixtiles-site/assets/images/logo-facebook.svg" alt="" /></a>
+        <a href="https://www.linkedin.com/company/mixtiles/" target="_blank" rel="noopener" aria-label="Mixtiles on LinkedIn"><img src="/mixtiles-site/assets/images/logo-linkedin.svg" alt="" /></a>
+        <a href="https://www.youtube.com/@mixtiles" target="_blank" rel="noopener" aria-label="Mixtiles on YouTube"><img src="/mixtiles-site/assets/images/logo-youtube.svg" alt="" /></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>
